@@ -13,6 +13,16 @@ body {
 header {
     background: linear-gradient(45deg, #6c5ce7, #74b9ff); /* Mantén el degradado atractivo */
     padding: 20px 40px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+header img {
+    max-width: 150px; /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto;
+    border-radius: 15px;
+    animation: bounce 2s infinite;
 }
 
 h2 {
