@@ -127,7 +127,21 @@ nav ul li a:hover {
     font-size: 1.2em;
     animation: bounce 1s infinite alternate;
 }
+/* Estilo base para el texto promocional */
+.promo-text {
+    display: inline-block;
+    animation: bounce 0.5s infinite alternate;
+}
 
+/* Animación para hacer que el texto "salte" */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
 /* Animación para hacer que el texto "salte" */
 @keyframes bounce {
     0% {
