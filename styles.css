@@ -13,6 +13,16 @@ body {
 header {
     background: linear-gradient(45deg, #6c5ce7, #74b9ff); /* Mantén el degradado atractivo */
     padding: 20px 40px;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px; /* Asegura un tamaño uniforme */
+    height: auto;
+    border-radius: 15px;
+    animation: bounce 2s infinite;
+    display: block;
+    margin: 0 auto; /* Centra el logo */
 }
 
 h2 {
@@ -22,53 +32,42 @@ h2 {
     letter-spacing: 2px;
 }
 
-.producto h3 {
-    color: #6c5ce7;
+/* Productos */
+.producto {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px; /* Tamaño fijo para uniformidad */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+    max-width: 100%; /* Evita que las imágenes sobrepasen el contenedor */
+    height: auto;
+    border-radius: 10px;
 }
 
 .producto:hover {
-    background-color: #ecf0f1;
     transform: scale(1.1);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-header img {
-    border-radius: 15px;
-    animation: bounce 2s infinite;
+/* Galería */
+.galeria-imagenes img {
+    max-width: 30%; /* Imágenes más pequeñas en la galería */
+    margin: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Animación para hacer que los elementos "salten" */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ffeaa7;
+.galeria-imagenes img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Secciones */
@@ -91,29 +90,22 @@ nav ul li a:hover {
     background: #ecf0f1;
 }
 
-/* Productos */
-.producto {
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+/* Animaciones globales */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Footer */
+footer {
+    background: #2d3436;
+    color: white;
     text-align: center;
-    width: 200px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.producto:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.producto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    padding: 20px 0;
 }
 
 /* Promoción */
@@ -137,56 +129,4 @@ nav ul li a:hover {
     color: white;
     font-size: 1.2em;
     animation: bounce 1s infinite alternate;
-}
-
-/* Galería */
-.galeria-imagenes img {
-    max-width: 30%;
-    margin: 5px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.galeria-imagenes img:hover {
-    transform: scale(1.1);
-}
-
-/* Formulario */
-form {
-    margin: 0 auto;
-    max-width: 400px;
-    text-align: left;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-form button {
-    background: linear-gradient(45deg, #6c5ce7, #74b9ff);
-    color: white;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-form button:hover {
-    background: linear-gradient(45deg, #74b9ff, #6c5ce7);
-}
-
-/* Footer */
-footer {
-    background: #2d3436;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
 }
