@@ -11,15 +11,24 @@ body {
 
 /* Encabezado */
 header {
-    background: linear-gradient(45deg, #6c5ce7, #74b9ff); /* Mantén el degradado atractivo */
+    background: linear-gradient(45deg, #6c5ce7, #74b9ff);
     padding: 20px 40px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Apilamos el contenido verticalmente */
+    align-items: center; /* Centra todo el contenido horizontalmente */
+}
+
+.descuento {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f39c12;
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Espacio entre el letrero de descuento y el logo */
+    border-radius: 10px;
 }
 
 header img {
-    max-width: 150px; /* Ajusta el tamaño de la imagen si es necesario */
+    max-width: 150px;
     height: auto;
     border-radius: 15px;
     animation: bounce 2s infinite;
@@ -34,17 +43,6 @@ h2 {
 
 .producto h3 {
     color: #6c5ce7;
-}
-
-.producto:hover {
-    background-color: #ecf0f1;
-    transform: scale(1.1);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-header img {
-    border-radius: 15px;
-    animation: bounce 2s infinite;
 }
 
 /* Animación para hacer que los elementos "salten" */
