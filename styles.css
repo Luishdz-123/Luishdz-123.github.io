@@ -37,6 +37,7 @@ header img {
     animation: bounce 2s infinite;
 }
 
+/* Animación para hacer que los elementos "salten" */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -104,8 +105,18 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*promoción*/
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Promoción */
 .promocion {
     background-color: #f39c12;
     padding: 20px;
@@ -126,41 +137,6 @@ nav ul li a:hover {
     color: white;
     font-size: 1.2em;
     animation: bounce 1s infinite alternate;
-}
-/* Estilo base para el texto promocional */
-.promo-text {
-    display: inline-block;
-    animation: bounce 0.5s infinite alternate;
-}
-
-/* Animación para hacer que el texto "salte" */
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
-/* Animación para hacer que el texto "salte" */
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-.producto:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.producto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
 }
 
 /* Galería */
