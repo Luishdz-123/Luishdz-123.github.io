@@ -11,33 +11,24 @@ body {
 
 /* Encabezado */
 header {
-    background: linear-gradient(45deg, #6c5ce7, #74b9ff); /* Mantén el degradado atractivo */
+    background: linear-gradient(45deg, #6c5ce7, #74b9ff); /* Degradado para el encabezado */
     padding: 20px 40px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que los elementos dentro del header se centren */
+    flex-direction: column; /* Asegura que el logo esté centrado */
 }
 
-h2 {
-    font-size: 2em;
-    color: #6c5ce7;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.producto h3 {
-    color: #6c5ce7;
-}
-
-.producto:hover {
-    background-color: #ecf0f1;
-    transform: scale(1.1);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
+/* Logo */
 header img {
-    border-radius: 15px;
-    animation: bounce 2s infinite;
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 15px; /* Redondea las esquinas del logo */
+    animation: bounce 2s infinite; /* Animación de rebote */
 }
 
-/* Animación para hacer que los elementos "salten" */
+/* Animación para hacer que el logo "salte" */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -47,6 +38,14 @@ header img {
     }
 }
 
+h2 {
+    font-size: 2em;
+    color: #6c5ce7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Otros estilos */
 nav ul {
     list-style: none;
     padding: 0;
@@ -69,124 +68,4 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffeaa7;
-}
-
-/* Secciones */
-.seccion {
-    padding: 40px 20px;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.seccion:nth-child(even) {
-    background: #ecf0f1;
-}
-
-/* Productos */
-.producto {
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-    width: 200px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.producto:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.producto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Promoción */
-.promocion {
-    background-color: #f39c12;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.promo-text {
-    display: inline-block;
-    background-color: #e74c3c;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.2em;
-    animation: bounce 1s infinite alternate;
-}
-
-/* Galería */
-.galeria-imagenes img {
-    max-width: 30%;
-    margin: 5px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.galeria-imagenes img:hover {
-    transform: scale(1.1);
-}
-
-/* Formulario */
-form {
-    margin: 0 auto;
-    max-width: 400px;
-    text-align: left;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-form button {
-    background: linear-gradient(45deg, #6c5ce7, #74b9ff);
-    color: white;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-form button:hover {
-    background: linear-gradient(45deg, #74b9ff, #6c5ce7);
-}
-
-/* Footer */
-footer {
-    background: #2d3436;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
 }
