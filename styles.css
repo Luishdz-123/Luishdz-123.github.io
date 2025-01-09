@@ -104,6 +104,40 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*promoción*/
+
+.promocion {
+    background-color: #f39c12;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.promo-text {
+    display: inline-block;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Animación para hacer que el texto "salte" */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
 .producto:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
